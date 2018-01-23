@@ -1,10 +1,10 @@
 package abstraccion;
 
-//exa 17/1/17
+
 
 public class Categoria {
 
-	public static Categoria miCategoria;
+	
 	String identificacion;
 	String nombre;
 	String descripcion;
@@ -12,15 +12,27 @@ public class Categoria {
 	// Constructor
 
 	public Categoria() {
-
+		
 	}
 
-	public String toString() {
-		String info;
-
-		info = ("El nombre es : "+ nombre+ " La descripcion es : " + descripcion +" La identificacion es : "+ identificacion);
+	public Categoria(String identifiacion, String nombre, String descripcion) {
+		this.nombre=nombre;
+		this.identificacion=identifiacion;
+		this.descripcion=descripcion;
+	}
+	
+	
+	
+	/*public String toString() {
+		 String info;
+		 
+		 info= ("El nombre es : "+ nombre+ " La descripcion es : " + descripcion +" La identificacion es : "+ identificacion);
 
 		return info;
 
-	}
+	}*/
+	
+	
+
+	
 }
